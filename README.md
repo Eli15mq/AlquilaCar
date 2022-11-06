@@ -486,7 +486,7 @@
 				<h3>❝<u>Tu llave para un coche de alquiler</u>❞</h3>
 				
 				<div id="paginaPrincipal">
-					<img src="images/ofertasespecialesimagen.png" width="545" height="315" alt="" />
+					<img src="ofertasespecialesimagen.png" width="545" height="315" alt="" />
 					<br>
 					<p>Somos una empresa de renta de automoviles, basamos en el servicio integral de la venta de los
 						mejores autos para ayudar a nuestros clientes a escoger los mejores automoviles de tendencia.
@@ -513,53 +513,53 @@
 				<div id="autos" style="display: none;">
 					<div class="contenedor" id="contenedor">
 						<a id="carroContenido1" href="#carroElemento1">
-							<img src="images/20220211-MARCAS-CARROS-MAS-CONFIABLES-2022-PORTADA.jpg" alt="" width="120"
+							<img src="20220211-MARCAS-CARROS-MAS-CONFIABLES-2022-PORTADA.jpg" alt="" width="120"
 								height="100" />
 						</a>
 						<a id="carroContenido2" href="#carroElemento2">
-							<img src="images/20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg"
+							<img src="20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg"
 								width="120" height="100" alt="" />
 						</a>
 						<a id="carroContenido3" href="#carroElemento3">
-							<img src="images/carros-deportivos-potencia.jpg" width="120" height="100" alt="" />
+							<img src="carros-deportivos-potencia.jpg" width="120" height="100" alt="" />
 						</a>
 						<a id="carroContenido4" href="#carroElemento4">
-							<img src="images/5da64f9a11291.r_1571197059653.0-296-1080-1014.jpeg" width="120"
+							<img src="5da64f9a11291.r_1571197059653.0-296-1080-1014.jpeg" width="120"
 								height="100" alt="" />
 						</a>
 						<a id="carroContenido5" href="#carroElemento5">
-							<img src="images/20220719-100-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-PRIMER-SEMESTRE-DE-2022-01.jpg"
+							<img src="20220719-100-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-PRIMER-SEMESTRE-DE-2022-01.jpg"
 								width="120" height="100" alt="" />
 						</a>
 						<div>
 							<div id="carroElemento1" style="display: none;">
-								<img src="images/20220211-MARCAS-CARROS-MAS-CONFIABLES-2022-PORTADA.jpg" alt=""
+								<img src="20220211-MARCAS-CARROS-MAS-CONFIABLES-2022-PORTADA.jpg" alt=""
 									width="618" height="400" />
 								<p id="precio">$5,500,000 COP</p>
 								<p id="informacionDelMedioMeCompra">A contado 2021| 57.500 km|Renault Twingo 1.2 Access
 								</p>
 							</div>
 							<div id="carroElemento2" style="display: none;">
-								<img src="images/20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg"
+								<img src="20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg"
 									width="618" height="400" alt="" />
 								<p id="precio2">$3,300,000 COP</p>
 								<p id="informacionDelMedioMeCompra2">A contado 2019| 57.500 km|Fiat 500.14 Sport</p>
 							</div>
 							<div id="carroElemento3" style="display: none;">
-								<img src="images/carros-deportivos-potencia.jpg" width="618" height="400" alt="" />
+								<img src="carros-deportivos-potencia.jpg" width="618" height="400" alt="" />
 								<p id="precio3">$4,600,000 COP</p>
 								<p id="informacionDelMedioMeCompra3">A contado 2020| 57.500 km|Dodge Journey 2.4 Sxt At
 									2400cc</p>
 							</div>
 							<div id="carroElemento4" style="display: none;">
-								<img src="images/5da64f9a11291.r_1571197059653.0-296-1080-1014.jpeg" width="618"
+								<img src="5da64f9a11291.r_1571197059653.0-296-1080-1014.jpeg" width="618"
 									height="400" alt="" />
 								<p id="precio4">$2,800,000 COP</p>
 								<p id="informacionDelMedioMeCompra4">A contado 2018| 57.500 km|Bmw Serie 1 120 Cabrio
 								</p>
 							</div>
 							<div id="carroElemento5" style="display: none;">
-								<img src="images/20220719-100-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-PRIMER-SEMESTRE-DE-2022-01.jpg"
+								<img src="20220719-100-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-PRIMER-SEMESTRE-DE-2022-01.jpg"
 									width="618" height="400" alt="" />
 								<p id="precio5">$2,300,000 COP</p>
 								<p id="informacionDelMedioMeCompra5">A contado 2017| 57.500 km|Toyota Rav4 Limited 2.5
@@ -583,7 +583,7 @@
 						¿Conóces el mejor camino para tu Renault cero kilómetros?
 						plan Rombo es el mejor camino a tu nuevo Renault.
 					</p>
-					<img style="display:block" src="images/PlanRombo.png" width="600" height="400" alt="" />
+					<img style="display:block" src="PlanRombo.png" width="600" height="400" alt="" />
 					<a title="" class="ContentCard__ctaLinkLink" data-track="click"
 						data-track-button-text="MÁS INFORMACIÓN" data-track-destination="/financiacion/plan-rombo.html"
 						data-track-event="navigationClick" href="/financiacion/plan-rombo.html">MÁS INFORMACIÓN</a>
