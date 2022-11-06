@@ -448,7 +448,7 @@
 	<div id="mainwrapper">
 		<header>
 			<div id="logo">
-				<img src="images/zarla-alquila-car-1x1-2400x2400-20220110-7ydf4xvrx3c7cktr4wtj.png" width="80" height="50" alt="" />
+				<img src="zarla-alquila-car-1x1-2400x2400-20220110-7ydf4xvrx3c7cktr4wtj.png" width="80" height="50" alt="" />
 			</div>
 			<div id="desplegable">
 				<ul class="nav">
