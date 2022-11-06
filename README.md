@@ -5,8 +5,443 @@
 <head>
 	<meta charset="utf-8">
 	<title>Alquila Car</title>
-	<link href="css/blogPostStyle.css" rel="stylesheet" type="text/css">
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+	 @charset "UTF-8";
+	#mainwrapper header {
+		/*Header */
+		background-color:#000000;
+		overflow: auto;
+		font-family: montserrat, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+	}
+	#mainwrapper header #logo {
+		/* Company Logo text */
+		width: 28%;
+		float: left;
+		padding-left: 2%;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		color: rgba(146,146,146,1.00);
+	}
+	#mainwrapper header nav {
+		/*Nav bar containing links in header */
+		text-align: right;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-right: 2%;
+		width: 68%;
+		float: left;
+		color: rgba(146,146,146,1.00);
+	}
+	header nav a {
+		/* Links in header */
+		padding-right: 2%;
+	}
+	details summary {
+		padding-right: 10%;
+		padding-top: 10%;
+	}
+
+	* {
+		padding:0px;
+		margin:0px;
+	}
+	#desplegable {
+		margin:auto;
+		Width:500px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+	}
+
+	ul, ol {
+		list-style:none;
+	}
+
+	.nav li a {
+		background: #000000;
+		color:#FFFFFF;
+		text-decoration: none;
+		padding: 10px 14px;
+		display:block;	
+	}
+	.nav li a:hover { 
+		background-color: #2A2A33;
+	}
+	.nav > li {
+		float:left;
+	}
+	.nav li ul {
+		display:none;
+		position: absolute;
+		min-width: 100px;
+	}
+	.nav li:hover > ul {
+		display:block;
+	}
+	.nav li ul li {
+		position:relative;
+	}
+	.nav li ul li ul {
+		right: -100px;
+		top:0px;
+	}
+	#content #mainContent h1, #content #mainContent h2 {
+		/* Styling for main headings */
+		color:#1B165F;
+		font-weight:400px;
+		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		font-size: 40px;
+	}
+	#content #mainContent h3 {
+		/*Captions ot Taglines */
+		font-style: normal;
+		font-weight: 200px;
+		color:#003AA9;
+		font-size: 140%;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	#content #mainContent #bannerImage {
+		/*Container for main banner image */
+		width: 100%;
+
+	}
+	#content #mainContent p {
+		/* All paragraphs under maincontent */
+		color:#000000;
+		font-family: source-sans-pro, Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-style: normal;
+		font-weight: 200;
+		text-align: justify;
+	}
+	#content #mainContent #authorInfo {
+		/* Author info section */
+		background-color:#003A8A;
+		position: relative;
+	}
+	#content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
+		color: rgba(255,255,255,1.00);
+		padding-left: 2%;
+		padding-top: 11px;
+		font-size: 30px;
+		position: relative;
+	}
+	#content #mainContent #authorInfo p {
+		color: rgba(255,255,255,1.00);
+		padding-left: 2%;
+		font-size: 16px;
+		padding-top: 0px;
+		padding-bottom: 11px;
+		padding-right: 2%;
+		position: relative;
+	}
+
+	#autos {
+	    height: 102px;
+	    width: 622px;
+	    border-width: 2px;
+	    border-style: solid;
+	    border-color: rgb(0, 2, 107);
+	    border-image: initial;
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	#contenedor {
+		height: 505px;
+		width: 624px;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		background-color: rgb(196, 217, 255);
+		border: 3px solid #0B006A;
+		position:absolute;
+
+	}
+	#content #mainContent #carroElemento1 p{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 22px;
+	}
+	#content #mainContent #carroElemento2 p{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 22px;
+	}
+	#content #mainContent #carroElemento3 p{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 22px;
+	}
+	#content #mainContent #carroElemento4 p{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 22px;
+	}
+	#content #mainContent #carroElemento5 p{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 22px;
+	}
+	footer article {
+		/* Footer articles */
+		width: 46%;
+		float: left;
+		font-size: 10px;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align:left;
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-style: normal;
+		font-weight: 200;
+		color:#144083;
+		position: relative;
+	}
+	footer article h3 {
+		/* Footer article titles */
+		text-align:left;
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 10px;
+
+	}
+	#mainContent {
+		/* Container for the blog post in individal blog view */
+		padding-left: 2%;
+		width: 71%;
+		float: left;
+		padding-right: 2%;
+		padding-top: 41px;
+	}
+	#mainwrapper #content #sidebar {
+		/* Sidebar*/
+		width: 25%;
+		height: 100%;
+		padding-left: 2%;
+		padding-right: 2%;
+		float: left;
+		background-color: rgba(246,246,246,1.00);
+		margin-top: 150px;
+		padding-top: 32px;
+	}
+	#mainwrapper {
+		/* Container of all content */
+		width: 80%;
+		overflow: auto;
+		margin-left: 10%;
+	}
+	#content #sidebar input {
+		/* Search box in sidebar */
+		width: 100%;
+		height: 500%;
+	}
+	#content #sidebar #adimage {
+		width: 100%;
+		background-color: rgba(208,207,207,1.00);
+		margin-top: 46px;
+		float: none;
+		overflow: auto;
+	}
+	nav ul li {
+		list-style-type: circle;
+		color:#003DD8;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	nav ul {
+		padding-left: 10%;
+	}
+	nav ul li a {
+		font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		color:#003DD2;
+		text-decoration: none;
+	}
+
+	#footerbar {
+		/* Footer bar at the bottom of the page */
+		clear: both;
+	    background-color: #001C58;
+	    width: 100%;
+	    min-height: 9em;
+	    color: #ffff;
+	}
+
+	#footerbar > article{
+		margin-top: 20px;
+		color: #ffff;
+		margin-bottom: 20px;
+	}
+
+	footer {
+		/* Container for footer artices */
+		width: 71%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.notOnDesktop {
+		/*element to be displayed only in mobile view and tabet view */
+		display: none;
+	}
+
+	#mainContent #bannerImage img {
+		/* Actual banner image */
+		width: 100%;
+	}
+
+	#sidebar #adimage img {
+		width: 100%;
+		float: left;
+	}
+
+	#mainwrapper header nav a {
+		color:aliceblue;
+		text-decoration: none;
+	}
+
+	/* Tablet view */
+	@media screen and (max-width:769px) {
+	.notOnDesktop {
+		/* Search box shown only in mobile view and Tablet view */
+		display: block;
+		text-align: right;
+		padding-right: 8px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		width: 96%;
+	}
+	#content .notOnDesktop input {
+		height: 28px;
+	}
+	#mainContent {
+		/* Container for the blog post */
+		padding-top: 0px;
+		float: none;
+		width: 96%;
+	}
+	#sidebar input {
+		/* Search box in sidebar */
+		display: none;
+	}
+	#mainwrapper #content #sidebar {
+		/* Sidebar*/
+		float: none;
+		width: 92%;
+		padding-top: 13px;
+		overflow: auto;
+		margin-top: 3px;
+		margin-left: 2%;
+		padding-bottom: 13px;
+	}
+	#content #sidebar #adimage {
+		/* Image in sidebar */
+		width: 60%;
+		margin-top: 0px;
+		float: left;
+	}
+	#content #sidebar nav {
+		/* Navigation links in sidebar */
+		width: 36%;
+		float: left;
+		padding-left: 4%;
+	}
+	#sidebar nav ul {
+		margin-top: 0px;
+	}
+	footer {
+		/* Footer region */
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	#content footer article {
+		/*Each footer article */
+		width: 46%;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+
+	#mainwrapper header {
+		/* Header */
+		width: 100%;
+	}
+
+
+	.ContentCard__ctaLink {
+		line-height: normal;
+		font-weight: 700;
+		color: #000;
+		font-size: 1.6rem;
+		margin-top: 16px;
+		border-bottom: 20px solid #1a00ef;
+		margin-left: 7px;
+	}
+
+	#catalogo {
+		margin-left: 0px;
+		font-style:normal;
+		color:#FFFFFF;
+		font-size: 15px;
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	}
+
+	.ContentCard__titleInner {
+		line-height: normal;
+		font-weight: 700;
+		border-bottom: 2px solid #efdf00;
+		color: #000;
+		font-size: 1.6rem;
+		margin-top: 16px;
+	}
+
+	/* Mobile view */
+	@media screen and (max-width:480px) {
+	#mainwrapper header #logo {
+		/* Company Logo text in header */
+		width: 96%;
+		margin-left: 2%;
+	}
+	#mainwrapper header nav {
+		/*navigation links in header */
+		text-align: center;
+		background-color: rgba(255,255,255,1.00);
+		width: 98%;
+	}
+	#content #sidebar #adimage {
+		/* Container for image in sidebar */
+		width: 100%;
+	}
+	#content #sidebar nav {
+		/* Navigation bar for links in sidebar */
+		width: 96%;
+		padding-top: 7px;
+	}
+	#sidebar nav ul li {
+		display: inline-block;
+		width: 32%;
+		text-align: center;
+	}
+	#mainwrapper #content #sidebar {
+		/* sidebar */
+		padding-bottom: 0px;
+	}
+	#content .notOnDesktop {
+		/* Search box shown only in mobile and tablet view */
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#content .notOnDesktop input {
+		width: 80%;
+		text-align: center;
+	}
+	#content #mainContent h3 {
+		/* Title under maincontent, if any */
+		font-size: 14px;
+	}
+	#content footer article {
+		/* Each foter article */
+		width: 96%;
+	}
+	}
+	}
+ </style>
 </head>
 
 <body>
